@@ -1,9 +1,19 @@
-var TransactionsView = Backbone.View.extend({
-  model: transactions,
+// js/views/transactionsview.js
+
+var app = app || {};
+
+// Transactions View
+// -----------------
+
+app.TransactionsView = Backbone.View.extend({
+  model: app.Register,
+
   el: $('#transactions'),
+
   initialize: function() {
     this.model.on('add', this.render(), this);
   },
+
   render: function() {
     var self = this;
     this.$el.html('');

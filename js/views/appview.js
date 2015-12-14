@@ -1,9 +1,12 @@
 // js/views/appview.js
 
-// AppView controlling the application
-// -----------------------------------
-var appview = Backbone.View.extend({
-  el: '.money-flow',
+var app = app || {};
+
+// The Application
+// ---------------
+
+app.appview = Backbone.View.extend({
+  el: '.money-flow-app',
 
   events: {
     'click .new-transaction': 'createTransaction'
@@ -11,7 +14,5 @@ var appview = Backbone.View.extend({
 
   initialize: function() {},
 
-  createTransaction: function() {
-    var tempTransaction = Transactions({});
-  }
+  createTransaction: function() {}
 });

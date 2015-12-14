@@ -1,8 +1,13 @@
-// js/collections/transaction.js
+// js/collections/transactions.js
 
-// Collection of multiple Transactions
+var app = app || {};
+
+// Transactions Collection
+// -----------------------
+
 var Transactions = Backbone.Collection.extend({
-  model: Transaction,
+  model: app.Transaction
 
-  
 });
+
+app.Register = new Transactions();
