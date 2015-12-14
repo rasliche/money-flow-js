@@ -6,7 +6,9 @@ var app = app || {};
 // -----------------------
 
 var Transactions = Backbone.Collection.extend({
-  model: app.Transaction
+  model: app.Transaction,
+
+  localStorage: new Backbone.LocalStorage('transactions-backbone')
 
 });
 

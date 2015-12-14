@@ -6,6 +6,8 @@ var app = app || {};
 // ---------------
 
 app.appview = Backbone.View.extend({
+
+  // The id of an element to bind to
   el: '.money-flow-app',
 
   events: {

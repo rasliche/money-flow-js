@@ -10,6 +10,5 @@ var trans2 = new app.Transaction({
   category: 'Restaurants'
 });
 
-var transactions = new Transactions();
-transactions.add(trans1);
-transactions.add(trans2);
+app.Register.add(trans1);
+app.Register.add(trans2);

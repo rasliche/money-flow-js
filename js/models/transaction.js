@@ -9,7 +9,14 @@ app.Transaction = Backbone.Model.extend({
   defaults: {
     date: new Date(),
     flow: 0,
-    category: '',
+    category: 'unknown',
     cleared: false
+  },
+
+  toggleClear: function() {
+    this.save({
+      cleared: !this.get('cleared')
+    });
   }
+
 });
