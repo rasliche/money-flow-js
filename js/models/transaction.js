@@ -11,12 +11,5 @@ app.Transaction = Backbone.Model.extend({
     flow: 0,
     category: 'unknown',
     cleared: false
-  },
-
-  toggleClear: function() {
-    this.save({
-      cleared: !this.get('cleared')
-    });
   }
-
 });
